@@ -2,10 +2,10 @@ import React from "react";
 
 import "./global.css";
 
-import Searchbar from "./components/SearchBar";
+import Dashboard from "./components/Dashboard";
 
 function App() {
-  return <Searchbar />;
+  return <Dashboard />;
 }
 
 export default App;

@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.container h1 {
+  margin-bottom: 40px;
+}
+
 section.form {
   width: 100%;
   display: flex;
@@ -51,14 +55,20 @@ section.profile {
   margin-top: 40px;
 }
 
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 div.user-info {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-right: 28px;
   text-align: center;
+  animation: fade-in 1s linear forwards;
 }
 
 
@@ -89,9 +99,9 @@ div.user-info span {
 
 div.repositories {
   display: grid;
-  background-color: crimson;
   width: 100%;
   height: auto;
+  animation: fade-in 1s linear forwards;
 }
 
 div.repositories ul {
@@ -101,11 +111,27 @@ div.repositories ul {
   
 }
 
-
 div.repositories ul li {
-  background-color: darkgrey;
+  background-color: rgb(233, 230, 230);
   border: 1px solid black;
-  border-radius: 8px;
+  border-radius: 5px;
   margin: 5px;
+  padding: 15px;
+  height: 100px;
+  overflow: hidden;
+}
 
+
+div.repositories ul li div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.repositories ul li div a {
+  font-size: 14px;
+}
+
+div.repositories ul li div span {
+  font-size: 14px;
+  margin-top: 14px;
 }
